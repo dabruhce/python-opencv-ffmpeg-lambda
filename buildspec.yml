@@ -1,0 +1,11 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - chmod 755 build.sh
+      #BUILD
+      - ./build.sh
+artifacts:
+  files:
+    - '**/*.zip'
+  discard-paths: no
